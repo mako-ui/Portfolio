@@ -19,8 +19,64 @@
     margin: 0 auto;
     text-align: center;
     position: relative;
-    border: 1px solid white;
     color: white;
+}
+
+.text {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+
+.cloud1 {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    animation-name: cloud1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.cloud2 {
+    position: absolute;
+    top: 5%;
+    right: 37%;
+    animation-name: cloud2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.cloud3 {
+    position: absolute;
+    top: 26%;
+    right: 10%;
+    animation-name: cloud3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cloud1 {
+    0% {left: 5%; top: 20%};
+    25% {left: 8%; top: 23%}
+    50% {left: 5%; top: 25%}
+    75% {left: 2%; top: 21%}
+    100% {left: 5%; top: 20%}
+}
+
+@keyframes cloud2 {
+    0% {right: 37%; top: 5%};
+    25% {right: 42%; top: 8%}
+    50% {right: 37%; top: 10%}
+    75% {right: 33%; top: 7%}
+    100% {right: 37%; top: 5%}
+}
+
+@keyframes cloud3 {
+    0% {right: 10%; top: 26%};
+    25% {right: 13%; top: 30%}
+    50% {right: 10%; top: 26%}
+    75% {right: 8%; top: 24%}
+    100% {right: 10%; top: 26%}
 }
 
 .mountain {
@@ -45,10 +101,19 @@ span {
     padding: 2rem 0;
 }
 
+.profile h2 {
+    font-family: 'Chilanka', cursive;
+}
+
 .skills {
     width: 75%;
     margin: 0 auto;
     padding: 2rem 0 2rem 0; /*top right bottom left*/
+}
+
+.skills-header {
+   text-align: center; 
+   font-family: 'Sansita Swashed', cursive;
 }
 
 .skills img {
@@ -81,6 +146,18 @@ span {
     padding-bottom: 2rem;
 }
 
+.contact-me h3, a {
+    padding-bottom: 5rem;
+}
+
+.contact-me a {
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
 .bottom-container {
     background-color: var(--background-color);
     height: 10vh;
@@ -89,6 +166,19 @@ span {
     padding-top: 1rem;
 }
 
-.skills-header {
-   text-align: center; 
+.bottom-container a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    transition: 0.4s;
+}
+
+.bottom-container a:hover {
+    background-color: #2c3e50;
+    color: #fff;
+    border-radius: 50%;
 }
